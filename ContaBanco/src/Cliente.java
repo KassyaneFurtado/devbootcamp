@@ -7,7 +7,7 @@ public class Cliente {
         conta++;
     }
     
-    public void exibirAgencia(){
-        agencia;
+    public int exibirAgencia(){
+        return agencia;
     }
 }

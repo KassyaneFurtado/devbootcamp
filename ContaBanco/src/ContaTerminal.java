@@ -1,8 +1,3 @@
-// TODO: Conhecer e importar a classe Scanner
-// Exibir as mensagens para o nosso usuário
-// Obter pela scanner os valores digitados no terminal
-// Exibir a mensagem de conta criada
-
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -27,7 +22,7 @@ public class ContaTerminal {
         int agencia = novoCliente.exibirAgencia();
         
 
-        System.out.println ("Olá"+ " " + nome + " " + sobrenome +",obrigado por criar uma conta em nosso banco, sua agência é" + agencia + " " + "seu saldo atual é de R$" + saldo);
+        System.out.println ("Olá"+ " " + nome + " " + sobrenome +",obrigado por criar uma conta em nosso banco, sua agência é" + " " + agencia + " " + "seu saldo atual é de R$" + saldo);
 
 
         }
