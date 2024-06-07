@@ -8,6 +8,6 @@ public class Cliente {
     }
     
     public void exibirAgencia(){
-        agencia
+        agencia;
     }
 }

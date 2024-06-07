@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
         Cliente novoCliente = new Cliente();
-
+ 
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
         System.out.println ("Digite seu nome:");
@@ -22,10 +22,12 @@ public class ContaTerminal {
 
         scanner.close();
 
-        Cliente.criarConta();
-        Cliente.exibirAgencia();
 
-        System.out.println ("Olá"+ " " + nome + " " + sobrenome +",obrigado por criar uma conta em nosso banco, sua agência é" + " " + "seu saldo atual é de R$" + saldo);
+        novoCliente.criarConta();
+        int agencia = novoCliente.exibirAgencia();
+        
+
+        System.out.println ("Olá"+ " " + nome + " " + sobrenome +",obrigado por criar uma conta em nosso banco, sua agência é" + agencia + " " + "seu saldo atual é de R$" + saldo);
 
 
         }
